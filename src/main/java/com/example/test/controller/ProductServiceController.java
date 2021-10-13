@@ -1,10 +1,7 @@
-package com.example.test;
+package com.example.test.controller;
 
-import com.example.test.ProductExceptionController.ProductNotfoundException;
 import com.example.test.pojo.Product;
 import com.example.test.service.ProductService;
-import java.util.HashMap;
-import java.util.Map;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

@@ -1,4 +1,4 @@
-package com.example.test;
+package com.example.test.service.consume;
 
 import com.example.test.pojo.Product;
 import java.util.Arrays;
