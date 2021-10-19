@@ -1,5 +1,6 @@
 package com.example.test.pojo;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -12,14 +13,15 @@ public class Product {
 
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
-  private String id;
+  private Integer id;
+  @Column(name = "PRODUCT")
   private String name;
 
-  public String getId() {
+  public Integer getId() {
     return id;
   }
 
-  public void setId(String id) {
+  public void setId(Integer id) {
     this.id = id;
   }
 
