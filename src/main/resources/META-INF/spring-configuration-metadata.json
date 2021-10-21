@@ -1,0 +1,7 @@
+{
+  "properties": [
+    {
+      "name": "test.enable",
+      "type": "java.lang.String"
+  }
+] }

@@ -22,10 +22,13 @@ flyway:
   password: "root"
 
 server:
-  port: 8080
+  port: 8180
 eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka
   instance:
     preferIpAddress: true
+
+test:
+  enable: true

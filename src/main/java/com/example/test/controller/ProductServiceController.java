@@ -1,5 +1,6 @@
 package com.example.test.controller;
 
+import com.example.test.annotaion.OptionalEndpoint;
 import com.example.test.pojo.Product;
 import com.example.test.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,6 +18,7 @@ public class ProductServiceController {
   @Autowired
   ProductService productService;
 
+  @OptionalEndpoint(property = "test.enable")
   @RequestMapping(value = "/products")
   public ResponseEntity<Object> getProduct() {
     return new ResponseEntity<>(productService.getProducts(), HttpStatus.OK);

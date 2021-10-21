@@ -14,7 +14,17 @@ public class ProductExceptionController {
 
   }
 
+  @ExceptionHandler(value = AOPException.class)
+  public ResponseEntity<Object> exception(AOPException exception) {
+    return new ResponseEntity<>("Not serviced", HttpStatus.NOT_FOUND);
+
+  }
+
   public static class ProductNotfoundException extends RuntimeException {
+
+    private static final long serialVersionUID = 1L;
+  }
+  public static class AOPException extends RuntimeException {
 
     private static final long serialVersionUID = 1L;
   }
