@@ -51,9 +51,9 @@ public class SwaggerConfig {
 
   private ApiInfo apiInfo() {
     return new ApiInfoBuilder().title("swiftech.am")
-        .description("Service Provider API")
-        .contact(new Contact("ServiceProvider",
-            "https://www.swiftech.am", "no-reply@swiftech.am"))
+        .description("Spring Boot Example API")
+        .contact(new Contact("Example",
+            "https://www.test@.mail", "no-reply@test.am"))
         .build();
   }
 }
